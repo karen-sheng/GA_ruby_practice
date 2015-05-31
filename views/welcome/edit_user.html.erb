@@ -1,0 +1,19 @@
+<h1>edit user page<h1>
+<ul>
+<% @users.each do |user| %>
+<li><%= user %></li>
+<% end %>
+</ul>
+
+<table>
+	<tr>
+		<th>City</th>
+		<th>Team </th>
+	</tr>
+<% @teams.each do |city, team| %>
+	<tr>
+		<td><%= city %></td>
+		<td><%= team %></td>
+	</tr>
+	<% end %>
+</table>
